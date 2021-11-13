@@ -20,7 +20,7 @@ body{
 }
 
 header{
-    padding: 2%;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +29,10 @@ header{
 .portfolioSection{
     text-align: center;
     flex:1;
+}
+
+.caseStudySection{
+    padding:0px 16px;
 }
 
 footer{
@@ -64,6 +68,35 @@ footer{
 
 /*Navigation*/
 
+.navBackground{
+    background-color: #4B4B53 !important;
+}
+
+.customNav{
+    width: 100%;
+}
+
+
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+  
+.navbar-brand img{
+    padding-right: 15px;
+}
+  
+.nav-item{
+    margin: 0px 15px;
+}
+
+.dropdown-menu{
+    background-color:#4B4B53;
+    opacity:0.9;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 #nameLogoContainer{
     display:flex;
     justify-content: left;
@@ -77,7 +110,6 @@ footer{
     font-size: 48px;
     line-height: 54px;
     color:#E6EEFC;
-    padding-left: 21px;
 }
 
 nav ul{
@@ -87,13 +119,17 @@ nav ul{
     padding:0;
 }
 
+.dropdown-item:hover{
+    background-color: #1B1B1E;
+}
+
 div a{
     color:#E6EEFC;
     text-decoration: none;
 }
 
 li a{
-    color:#E6EEFC;
+    color:#E6EEFC !important;
     text-decoration: none;
 }
 
@@ -178,12 +214,25 @@ li a{
 
 /* Classes */
 
+.roundedCorners{
+    border-radius: 15px;
+}
+
+.figure-caption{
+    color:#E6EEFC;
+    font-weight: 600;
+}
+
+.onTop{
+    z-index: 10;
+}
+
 .inline-block{
     display: inline-block;
     vertical-align: bottom;
 }
 
-img.padded{
+.padded{
     padding-right:34px;
 }
 
@@ -569,13 +618,20 @@ h3.blueCard{
     color: #2656A3;
 }
 
+h6.dropdownHeader{
+    font-family: Spartan !important;
+    font-weight: 700;
+    font-size: 16px;
+    color:#E6E6FF;
+}
+
 p {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
-    color: #D3DDED;
+    color: #E6EEFC;
 }
 
 p.purpleCard {
@@ -605,20 +661,16 @@ p.intro{
     margin: auto;
 }
 
+.pageHeader{
+    margin:0px 0px 32px;
+}
+
 /* Case Study */
 
-.caseStudy{
-    display: flex;    
-    justify-content:center;
-}
 
 .caseStudyItem{
     width: 48%;
     text-align: center;
-}
-
-.caseContent{
-    text-align: left;
 }
 
 .accordion {
@@ -662,11 +714,19 @@ p.intro{
     margin: 8px 0;
 }
 
+.panelMargin{
+    margin: 32px 0;
+}
+
+.alignItemsPlease{
+    align-items: center;
+}
+
 /* Media Query */
 
 @media (max-width: 1200px) and (min-width:600px){
     header{
-        padding: 2%;
+        padding: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -732,7 +792,7 @@ p.intro{
 
 @media (max-width:599px){
     header{
-        padding: 2%;
+        padding: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
